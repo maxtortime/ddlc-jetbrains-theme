@@ -271,7 +271,8 @@ public final class MTMonikaTheme extends MTDokiDokiTheme {
             "Label.selectedForeground",
             "Button.darcula.selectedButtonForeground",
             "PopupMenu.background",
-            "Separator.background"
+            "Separator.background",
+            "Spinner.background"
 
         );
   }
@@ -353,7 +354,6 @@ public final class MTMonikaTheme extends MTDokiDokiTheme {
         "StatusBar.top2Color",
         "StatusBar.bottomColor",
         "ToolTip.background",
-        "Spinner.background",
         "SplitPane.highlight",
         "SearchEverywhere.background",
         "SidePanel.background",

@@ -67,6 +67,7 @@ public final class MTSpinnerUI extends DarculaSpinnerUI {
   @Override
   public void paint(final Graphics g, final JComponent c) {
     super.paint(g, c);
+    System.out.println("ALSO DOING STUFFS");
     final Border border = spinner.getBorder();
     if (border != null) {
       border.paintBorder(c, g, 0, 0, spinner.getWidth(), spinner.getHeight());
@@ -136,6 +137,7 @@ public final class MTSpinnerUI extends DarculaSpinnerUI {
         mid = w / 2;
 
         g.setColor(isEnabled ? enabledColor : disabledColor);
+        System.out.println("DOING STUFF");
 
         g.translate(x, y);
         switch (direction) {

@@ -335,8 +335,8 @@ public final class MTLafComponent extends JBPanel implements ApplicationComponen
     UIManager.put("ToggleButton.border", new DarculaButtonPainter());
     UIManager.put("ToggleButtonUI", DarculaButtonUI.class.getName());
 
-    UIManager.put("SpinnerUI", DarculaSpinnerUI.class.getName());
-    UIManager.put("Spinner.border", new DarculaSpinnerBorder());
+    UIManager.put("SpinnerUI", MTSpinnerUI.class.getName());
+    UIManager.put("Spinner.border", new MTSpinnerBorder());
 
     UIManager.put("TreeUI", DarculaTreeUI.class.getName());
     UIManager.put("OptionButtonUI", DarculaOptionButtonUI.class.getName());
@@ -377,8 +377,8 @@ public final class MTLafComponent extends JBPanel implements ApplicationComponen
     UIManager.put("ToggleButton.border", new DarculaButtonPainter());
     UIManager.put("ToggleButtonUI", DarculaButtonUI.class.getName());
 
-    UIManager.put("SpinnerUI", DarculaSpinnerUI.class.getName());
-    UIManager.put("Spinner.border", new DarculaSpinnerBorder());
+    UIManager.put("SpinnerUI", MTSpinnerUI.class.getName());
+    UIManager.put("Spinner.border", new MTSpinnerBorder());
 
     UIManager.put("TreeUI", DarculaTreeUI.class.getName());
     UIManager.put("OptionButtonUI", DarculaOptionButtonUI.class.getName());

@@ -310,7 +310,8 @@ public class MTDokiDokiTheme extends MTAbstractTheme {
             "Label.selectedForeground",
             "Button.darcula.selectedButtonForeground",
             "PopupMenu.background",
-            "Separator.background"
+            "Separator.background",
+            "Spinner.background"
 
         );
   }
@@ -385,7 +386,6 @@ public class MTDokiDokiTheme extends MTAbstractTheme {
         "StatusBar.top2Color",
         "StatusBar.bottomColor",
         "ToolTip.background",
-        "Spinner.background",
         "SplitPane.highlight",
         "SearchEverywhere.background",
         "SidePanel.background",
