@@ -48,6 +48,7 @@ import java.awt.event.FocusEvent;
  * @author Konstantin Bulenkov
  */
 public final class MTSpinnerUI extends DarculaSpinnerUI {
+  // TODO: 6/17/18 this looks like one of the places to look for the loading doo dad 
   private final FocusAdapter myFocusListener = new FocusAdapter() {
     @Override
     public void focusGained(final FocusEvent e) {
