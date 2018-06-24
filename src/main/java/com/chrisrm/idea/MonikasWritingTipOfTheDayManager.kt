@@ -1,6 +1,5 @@
 package com.chrisrm.idea
 
-import com.intellij.ide.util.TipDialog
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.project.DumbAware
 import com.intellij.openapi.project.Project
@@ -16,9 +15,8 @@ class MonikasWritingTipOfTheDayManager : StartupActivity, DumbAware {
         ToolWindowManager.getInstance(project).invokeLater {
             if (!project.isDisposed)
                 ToolWindowManager.getInstance(project).invokeLater {
-                    println(WindowManagerEx.getInstanceEx().getFocusedComponent(project))
                     if (!project.isDisposed)
-                        TipDialog.createForProject(project).show()
+                        WritingTipDialog.createForProject(project).show()
                 }
         }
     }
