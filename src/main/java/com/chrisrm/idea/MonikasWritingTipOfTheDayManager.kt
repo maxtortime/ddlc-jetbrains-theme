@@ -13,11 +13,10 @@ class MonikasWritingTipOfTheDayManager : StartupActivity, DumbAware {
     override fun runActivity(project: Project) {
         if (ApplicationManager.getApplication().isUnitTestMode) return
 
-        println(WindowManagerEx.getInstanceEx().getFocusedComponent(project))
-
         ToolWindowManager.getInstance(project).invokeLater {
             if (!project.isDisposed)
                 ToolWindowManager.getInstance(project).invokeLater {
+                    println(WindowManagerEx.getInstanceEx().getFocusedComponent(project))
                     if (!project.isDisposed)
                         TipDialog.createForProject(project).show()
                 }
