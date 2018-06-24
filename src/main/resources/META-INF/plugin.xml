@@ -384,6 +384,9 @@
 
     </actions>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity id="TipOfTheDayManager" implementation="com.chrisrm.idea.MonikasWritingTipOfTheDayManager"/>
+    </extensions>
 
     <change-notes>
     </change-notes>
