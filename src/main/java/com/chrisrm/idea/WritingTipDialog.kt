@@ -4,9 +4,11 @@ import com.intellij.CommonBundle
 import com.intellij.ide.IdeBundle
 import com.intellij.ide.util.TipPanel
 import com.intellij.internal.statistic.UsageTrigger
+import com.intellij.openapi.application.impl.LaterInvocator
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.DialogWrapper
 import com.intellij.openapi.wm.ex.WindowManagerEx
+import com.intellij.util.containers.stream
 import com.intellij.util.ui.JBUI
 
 import javax.swing.*
@@ -38,6 +40,8 @@ class WritingTipDialog : DialogWrapper {
         horizontalStretch = 1.33f
         verticalStretch = 1.25f
         init()
+        LaterInvocator.getCurrentModalEntities().stream()
+                .forEach(System.out::println)
     }
 
     override fun getStyle(): DialogWrapper.DialogStyle {
